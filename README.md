@@ -7,7 +7,7 @@
 <h1 align="center">
     <strong>hyperchan</strong>
     <p style="font-size: .8em">
-        like 4chan but it works™
+        the hypermedia driven imageboard™
     </p>
 </h1>
 
@@ -15,7 +15,7 @@
 
 ***hyperchan*** is a copy (not a 1:1 clone) of 4chan, the (in)famous imageboard site.
 
-The aim is to create a chan-like imageboard using a modern, resilient, scalable and ***secure*** tech stack.
+The aim is to create a hypermedia driven imageboard using a modern, resilient, scalable and ***secure*** tech stack.
 
 The planned features of hyperchan include:
 
