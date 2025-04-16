@@ -1,7 +1,7 @@
 <p align="center">
     <img width="400"
     alt="hyperchan Logo"
-    src="logo.png">
+    src="./static/image/hyperchan.png">
 </p>
 
 <h1 align="center">

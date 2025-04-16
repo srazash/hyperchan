@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"hyperchan/controllers"
 	"log"
 	"os"
 
@@ -14,4 +15,6 @@ func main() {
 		log.Fatalf("Error loading .env file\n")
 	}
 	fmt.Printf("%s\n", os.Getenv("GREETING"))
+
+	controllers.Serve()
 }
