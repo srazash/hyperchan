@@ -20,7 +20,7 @@ func Serve() {
 	e.Use(middleware.GzipWithConfig(middleware.GzipConfig{
 		Level: 5,
 	}))
-	e.Static("/", "static")
+	e.Static("/static", "static")
 
 	e.GET("/", func(c echo.Context) error {
 		return c.HTML(http.StatusOK, "<marquee>HYPERCHAN LIVES!</marquee>")

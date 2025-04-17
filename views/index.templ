@@ -1,5 +1,16 @@
 package views
 
+import (
+	"fmt"
+)
+
 templ Hello(name string) {
-	<div>Hello, { name }</div>
+	{{ greet := fmt.Sprintf("Hello, %s!", name) }}
+
+	<div>
+		<img src="./static/image/hyperchan_s.png" alt="hyperchan Logo">
+	</div>
+	<div>
+		<marquee><h1>{ greet }</h1></marquee>
+	</div>
 }
