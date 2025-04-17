@@ -6,11 +6,9 @@ import (
 	"fmt"
 	"hyperchan/models"
 	"hyperchan/views"
-	"log"
 	"net/http"
 	"os"
 
-	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
@@ -38,11 +36,6 @@ func Serve() {
 		views.Hello("HYPERCHANNERS").Render(context.Background(), h)
 		return c.HTML(http.StatusOK, h.String())
 	})
-
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatalf("Error loading .env file\n")
-	}
 
 	e.Logger.Fatal(e.Start(os.Getenv("PORT")))
 }
